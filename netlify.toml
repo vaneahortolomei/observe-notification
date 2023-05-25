@@ -13,6 +13,16 @@
     Content-Type = "application/manifest+json"
 
 [[headers]]
+  for = "/*.js"
+    [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/*.html"
+    [headers.values]
+    Content-Type = "text/html"
+
+[[headers]]
   for = "/assets/*"
   [headers.values]
     cache-control = '''
