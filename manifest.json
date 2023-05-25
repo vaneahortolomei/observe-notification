@@ -3,17 +3,17 @@
     "short_name": "ObNot",
     "icons": [
         {
-            "src": "/assets/bell-192.png",
+            "src": "/bell-192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/assets/bell.png",
+            "src": "/bell.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "start_url": "/",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#000000"
