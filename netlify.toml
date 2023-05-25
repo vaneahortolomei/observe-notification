@@ -8,11 +8,6 @@
   status = 200
 
 [[headers]]
-  for = "/manifest.webmanifest"
-  [headers.values]
-    Content-Type = "application/manifest+json"
-
-[[headers]]
   for = "/*.js"
     [headers.values]
     Content-Type = "application/javascript"
@@ -22,10 +17,3 @@
     [headers.values]
     Content-Type = "text/html"
 
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    cache-control = '''
-    max-age=31536000,
-    immutable
-    '''
