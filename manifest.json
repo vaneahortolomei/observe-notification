@@ -3,12 +3,12 @@
     "short_name": "ObNot",
     "icons": [
         {
-            "src": "/bell-192.png",
+            "src": "/assets/bell-192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/bell.png",
+            "src": "/assets/bell.png",
             "sizes": "512x512",
             "type": "image/png"
         }
