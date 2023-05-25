@@ -1,6 +1,12 @@
 import {defineConfig} from "vite";
+import {generateSW} from 'vite-plugin-pwa';
 
 export default defineConfig({
+    plugins: [
+        generateSW({
+            swDest: 'sw.js',
+        }),
+    ],
     build: {
         rollupOptions: {
             input: {
