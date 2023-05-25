@@ -16,14 +16,5 @@
     <p>hello user!</p>
 </div>
 <script type="module" src="/main.js"></script>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js').then(register => {
-                console.log(register);
-            });
-        });
-    }
-</script>
 </body>
 </html>
