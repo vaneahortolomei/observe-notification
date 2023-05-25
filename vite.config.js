@@ -19,8 +19,33 @@ export default defineConfig({
                 "theme_color": "#000000",
                 "icons": [
                     {
-                        "src": "/bell-192.png",
+                        "src": "/ios-80.png",
+                        "sizes": "80x80",
+                        "type": "image/png"
+                    },
+                    {
+                        "src": "/ios-120.png",
+                        "sizes": "120x120",
+                        "type": "image/png"
+                    },
+                    {
+                        "src": "/ios-152.png",
+                        "sizes": "152x152",
+                        "type": "image/png"
+                    },
+                    {
+                        "src": "/android-launchericon-96-96.png",
+                        "sizes": "96x96",
+                        "type": "image/png"
+                    },
+                    {
+                        "src": "/android-launchericon-192-192.png",
                         "sizes": "192x192",
+                        "type": "image/png"
+                    },
+                    {
+                        "src": "/android-launchericon-512-512.png",
+                        "sizes": "512x512",
                         "type": "image/png"
                     },
                     {
