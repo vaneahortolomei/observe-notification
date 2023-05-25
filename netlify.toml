@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "dist/"
+  publish = "dist"
+  command = "pnpm run build"
 
 [[redirects]]
   from = "/*"
@@ -8,12 +8,14 @@
   status = 200
 
 [[headers]]
-  for = "/*.js"
-    [headers.values]
-    Content-Type = "application/javascript"
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
 
 [[headers]]
-  for = "/*.html"
-    [headers.values]
-    Content-Type = "text/html"
-
+  for = "/assets/*"
+  [headers.values]
+    cache-control = '''
+    max-age=31536000,
+    immutable
+    '''
